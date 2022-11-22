@@ -37,3 +37,30 @@ def solvenqutil(board,col):
                 return True
             board[i][col]=0
     return False
+    
+    
+    
+    
+def solvenq():
+    board=[[0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0],
+          [0,0,0,0,0,0,0,0]
+          ]
+    
+    if solvenqutil(board,0)==False:
+        print("solution does not exists")
+        return False
+    
+    printsol(board)
+    return True
+  
+#driver code
+
+solvenq()
+
+
